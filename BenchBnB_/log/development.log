@@ -1,0 +1,334 @@
+Started GET "/" for ::1 at 2022-05-10 14:05:30 -0700
+
+ActiveRecord::NoDatabaseError - connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "BenchBnB__development" does not exist:
+
+Started POST "/__better_errors/fb677ea1a97c5742/variables" for ::1 at 2022-05-10 14:05:30 -0700
+  [1m[35m (263.7ms)[0m  [1m[35mCREATE DATABASE "BenchBnB__development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (98.3ms)[0m  [1m[35mCREATE DATABASE "BenchBnB__test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (64.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (41.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3303852645741656925)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to InitialSetup (20220510210719)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220510210719"]]
+  ↳ bin/rails:9
+  [1m[35m (18.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-05-10 21:07:36.623535"], ["updated_at", "2022-05-10 21:07:36.623535"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3303852645741656925)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2022-05-10 14:07:44 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/appacademy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.8/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/appacademy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/appacademy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.8/lib/rails/templates/rails/welcome/index.html.erb (5.6ms)
+Completed 200 OK in 24ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 14:07:46 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/appacademy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/appacademy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.8/lib/rails/templates/rails/welcome/index.html.erb (3.7ms)
+Completed 200 OK in 16ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 14:07:47 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/appacademy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/appacademy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.8/lib/rails/templates/rails/welcome/index.html.erb (3.8ms)
+Completed 200 OK in 16ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 14:08:07 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/appacademy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/appacademy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.8/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 18ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 14:09:24 -0700
+
+ArgumentError - 'StaticPages' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use:
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/329c29916e96dc51/variables" for ::1 at 2022-05-10 14:09:24 -0700
+Started GET "/" for ::1 at 2022-05-10 14:09:33 -0700
+
+ArgumentError - 'Static' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use:
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/edf33b91aad4436b/variables" for ::1 at 2022-05-10 14:09:33 -0700
+Started GET "/" for ::1 at 2022-05-10 14:09:33 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-05-10 14:09:35 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-05-10 14:09:43 -0700
+
+ActionController::RoutingError - uninitialized constant StaticController:
+
+Started POST "/__better_errors/b37673116dbca23f/variables" for ::1 at 2022-05-10 14:09:43 -0700
+Started GET "/" for ::1 at 2022-05-10 14:09:43 -0700
+
+ActionController::RoutingError - uninitialized constant StaticController:
+
+Started POST "/__better_errors/138dc6b00e222f51/variables" for ::1 at 2022-05-10 14:09:43 -0700
+Started GET "/" for ::1 at 2022-05-10 14:10:37 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 2538ms (Views: 2531.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3303852645741656925)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20220510211807)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying NOT NULL, "session_token" character varying NOT NULL, "password_digest" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20220510211807_create_users.rb:3
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  ↳ db/migrate/20220510211807_create_users.rb:9
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/migrate/20220510211807_create_users.rb:10
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220510211807"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3303852645741656925)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2022-05-10 14:43:19 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/appacademy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.8/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 165ms (Views: 160.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 14:43:20 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 48ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/session" for ::1 at 2022-05-10 14:45:21 -0700
+Processing by Api::SessionsController#destroy as JSON
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 3ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started DELETE "/api/session" for ::1 at 2022-05-10 14:49:58 -0700
+
+ArgumentError - Before process_action callback :valid_authenticity_token has not been defined:
+  app/controllers/application_controller.rb:3:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/api/sessions_controller.rb:1:in `<top (required)>'
+
+Started DELETE "/api/session" for ::1 at 2022-05-10 14:50:42 -0700
+Processing by Api::SessionsController#destroy as JSON
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `errors' for nil:NilClass:
+  app/controllers/api/sessions_controller.rb:8:in `destroy'
+
+Started DELETE "/api/session" for ::1 at 2022-05-10 14:51:34 -0700
+Processing by Api::SessionsController#destroy as JSON
+Completed 404 Not Found in 6ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 14:54:48 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 65ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 15:11:06 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 83ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 15:11:53 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/appacademy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.8/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1632ms (Views: 1622.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 15:12:14 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 81ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 15:12:29 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 89ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 15:26:03 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 169ms (Views: 163.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 15:27:55 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 173ms (Views: 167.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 15:27:56 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 101ms (Views: 97.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 15:30:09 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2332ms (Views: 2328.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/session" for ::1 at 2022-05-10 15:31:30 -0700
+
+AbstractController::ActionNotFound - The action 'create' could not be found for Api::SessionsController:
+
+Started DELETE "/api/session" for ::1 at 2022-05-10 15:31:46 -0700
+Processing by Api::SessionsController#destroy as JSON
+Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 15:32:25 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 98ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/api/session" for ::1 at 2022-05-10 15:32:29 -0700
+Processing by Api::SessionsController#destroy as JSON
+Completed 422 Unprocessable Entity in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 15:32:40 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 101ms (Views: 96.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-05-10 15:32:41 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 118ms (Views: 114.3ms | ActiveRecord: 0.0ms)
+
+
